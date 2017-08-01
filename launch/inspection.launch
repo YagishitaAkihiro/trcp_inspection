@@ -1,0 +1,7 @@
+<launch>
+  <!-- launch rospeex_local (ss/sr/spi) -->
+  <include file="$(find rospeex_launch)/launch/rospeex_local.launch" />
+
+  <!-- sample node -->
+  <node name="inspection_ny" pkg="trcp_inspection" type="inspection_ny.py" output="screen"/>
+</launch>
